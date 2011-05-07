@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+#drawing-pane {
+	width: 600px;
+	height: 400px;
+	border: thin solid black;
+}
+
+#background-url {
+	width: 20em;
+}
+
+#main-pane {
+	vertical-align: top;
+}
+
+.editor #toolbar {
+	vertical-align: top;
+	text-align: center;
+}
+
+.editor .mode-select {
+	text-align: left;
+}
+
+.mode-select label {
+	width: 9em;
+}
+
+.editor #toolbar .command {
+	width: 10em;
+}
+
+.editor #toolbar .arrow {
+	width: 5em;
+}
+	
+
+.editor .knob {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-image: url("img/ico_dots3_16.gif");
+	background-position: center center;
+}
+
+.editor .dot {
+	width: 16px;
+	height: 16px;
+	background-image: url("img/ico_dots1_16.gif");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.editor .selected-icon {
+	background-image: url("img/selected.png");
+	width: 29px;
+	height: 29px;
+	top: -6px;
+	left: -6px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.editor .ui-selectable-disabled {
+	opacity: 1.0;
+}
+
+.editor .ui-selecting {
+	background-color: skyblue;
+	opacity: 0.9;
+}
+
+.editor .dot-index {
+	font-size: 10pt;
+	width: 16px;
+	height: 16px;
+	font-family: monospace;
+	top: 14px;
+	left: 10px;
+}
+
+

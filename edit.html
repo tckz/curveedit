@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="
+http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.12/themes/redmond/jquery-ui.css
+">
+<link rel="stylesheet" type="text/css" href="css/editor.css">
+<title>曲線エディタ</title>
+</head>
+<body>
+<div class="editor">
+	<table border="0">
+	<tr><td><span id="mes">&nbsp;</span><br></td></tr>
+	<tr>
+	<td id="main-pane">
+		<div class="mode-select">
+			<input type="radio" name="mode" value="0" id="mode-select"><label for="mode-select">select mode</label>
+			<input type="radio" name="mode" value="1" id="mode-new-dot"><label for="mode-new-dot">plot mode</label>
+		</div>
+	<div id="drawing-pane" class="drawing-pane">
+		<div class="drawing-back"></div>
+		<canvas id="drawing">no canvas</canvas>
+	</div>
+	<br>
+	<div>
+		BG Image URL：<input type="text" id="background-url">
+		<button id="button-background-url">background</button><br>
+	</div>
+	</td>
+	<td id="toolbar">
+		<button class="command" id="button-delete">delete</button><br>
+		<button class="command" id="button-serialize">serialize</button><br>
+		<button class="command" id="button-deserialize">de-serialize</button>
+		<hr>
+		<button class="command" id="button-see-bg">show bg</button><br>
+		<button class="command" id="button-show-index">show dot index</button><br>
+		<button class="command" id="button-show-thumbnail">thumbnail</button>
+
+		<hr>
+		<button class="arrow" id="button-up">up</button>
+		<br>
+		<button class="arrow" id="button-left">left</button>
+		<button class="arrow" id="button-right">right</button>
+		<br>
+		<button class="arrow" id="button-down">down</button>
+	</td>
+	</tr>
+	</table>
+	<textarea id="data"></textarea>
+</div>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.12/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.json-2.2.min.js"></script>
+
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="EditorModel.js"></script>
+<script type="text/javascript" src="HandleModel.js"></script>
+<script type="text/javascript" src="HandleView.js"></script>
+<script type="text/javascript" src="EditorView.js"></script>
+<script type="text/javascript" src="EditorController.js"></script>
+<script type="text/javascript">
+<!--
+jQuery(function($){
+
+var c = new EditorController();
+c.run();
+
+});
+-->
+</script>
+</body>
+</html>
+
