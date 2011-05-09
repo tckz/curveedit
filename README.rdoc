@@ -1,0 +1,29 @@
+= 曲線エディタ
+
+== Features
+
+* 3次ベジェ曲線を編集して始点・端点・制御点の座標を取るもの。
+
+== Source code
+
+https://github.com/tckz/curveedit
+
+== Caution
+
+* ドットや選択状態などの画像を同梱していない。
+  SEE htdocs/css/img/README-ignore
+
+
+== License
+
+Copyright(c) 2011 tckz<at.tckz@gmail.com>
+
+This software is licensed under the MIT license.
+
+See COPYRIGHT.txt
+
+== My environment
+
+* Windows 7 Professional x64
+* Fx 4.0.1
+
