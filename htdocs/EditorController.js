@@ -159,6 +159,18 @@ EditorController.prototype = {
 	},
 	run: function() {
 		this.init();
+		$("button").button();
+		$(".mode-select").buttonset();
+
+		if (!this.view.isCanvasEnabled()) {
+			this.showMessageBox({
+				message: "This browser is not support Canvas.",
+				title: "No canvas"
+			});
+			$(".editor button").button("disable");
+			$(".editor .mode-select").buttonset("disable");
+			return;
+		};
 
 		var self = this;
 
@@ -201,9 +213,6 @@ EditorController.prototype = {
 		$("#mode-select").change(function(ev) {
 			toggle_dots_selectable(true);
 		});
-
-		$("button").button();
-		$(".mode-select").buttonset();
 
 		$("#mode-new-dot").change(function(ev) {
 			toggle_dots_selectable(false);

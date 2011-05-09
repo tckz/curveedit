@@ -32,6 +32,13 @@ EditorView.prototype = {
 			delete this.dots[id];
 		}
 	},
+	isCanvasEnabled: function() {
+		if (this.canvas.get(0).getContext) {
+			return	true;
+		}
+
+		return false;
+	},
 	redrawDots: function(model) {
 		// ドットのインデックス
 		var i = 0;
@@ -149,7 +156,7 @@ EditorView.prototype = {
 
 	},
 	prepareDrawingPane: function() {
-		parent = this.canvas.parent();
+		var parent = this.canvas.parent();
 		parent.css({
 			"position": "relative"
 		});
@@ -187,26 +194,26 @@ EditorView.prototype = {
 				"class": "dot"
 			})
 			.css({
-				position: "absolute",
+				"position": "absolute"
 			})
 			.append($("<div/>")
 				.attr({
-					class: "selected-icon"
+					"class": "selected-icon"
 				})
 				.css({
-					position: "absolute",
-					display: "none"
+					"position": "absolute",
+					"display": "none"
 				})
 			).append($("<div/>")
 				.attr({
-					class: "dot-index"
+					"class": "dot-index"
 				})
 				.css({
-					position: "absolute",
-					display: "none"
+					"position": "absolute",
+					"display": "none"
 				})
 			).data({
-				model: dot
+				"model": dot
 			});
 		;
 
@@ -227,10 +234,10 @@ EditorView.prototype = {
 		var make_knob = function() {
 			return $("<div/>")
 				.attr({
-					class: "knob"
+					"class": "knob"
 				})
 				.css({
-					position: "absolute"
+					"position": "absolute"
 				})
 			;
 		}
