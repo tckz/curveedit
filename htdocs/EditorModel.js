@@ -222,6 +222,9 @@ EditorModel.prototype = {
 
 		this.notifier.notify();
 	},
+	/**
+	 * @param	target 削除したいドットモデル
+	 */
 	deleteDot: function(target) {
 		/*
 		 * 3点を割るとパスが閉じなくて面倒なので、削除不可に。

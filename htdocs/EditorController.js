@@ -335,7 +335,10 @@ EditorController.prototype = {
 		$("#button-delete").click(function(ev) {
 			var sels = self.model.getSelected();
 			if (sels.length == 0) {
-				// 選択してないと削除できないことに。
+				self.showMessageBox({
+					message: "Select one or more dots.",
+					title: "Delete dot"
+				});
 				return;
 			}
 			self.closeHandle();
