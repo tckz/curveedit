@@ -1,3 +1,12 @@
+/*
+ * 曲線エディタ
+ * https://github.com/tckz/curveedit
+ * 
+ * Copyright(c) 2011 tckz<at.tckz@gmail.com>
+ * This software is licensed under the MIT license.
+ * See COPYRIGHT.txt 
+ */
+
 /**
  * エディタ:controller
  */
