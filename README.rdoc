@@ -4,6 +4,10 @@
 
 * 3次ベジェ曲線を編集して始点・端点・制御点の座標を取るもの。
 
+== Demo page
+
+http://passing.breeze.cc/mt/110509/curveedit/edit.html
+
 == Source code
 
 https://github.com/tckz/curveedit
