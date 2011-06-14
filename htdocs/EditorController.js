@@ -164,7 +164,7 @@ EditorController.prototype = {
 
 		if (!this.view.isCanvasEnabled()) {
 			this.showMessageBox({
-				message: "This browser is not support Canvas.",
+				message: "This browser does not support Canvas.",
 				title: "No canvas"
 			});
 			$(".editor button").button("disable");
